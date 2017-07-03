@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>My API Front</title>
+	<link rel="stylesheet" type="text/css" href="public/css/style.css"/>
+	<script
+	src="https://code.jquery.com/jquery-3.2.1.js"
+	integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+	crossorigin="anonymous"></script>
+</head>
+<body id="home">
+	<h1>Front API</h1>
+	<table id="users">
+		<tr>
+			<th>Id</th>
+			<th>Name</th>
+			<th>Email</th>
+			<th>Actions</th>
+		</tr>
+	</table>
+	<form method="POST" action="http://localhost/my_api/users">
+		<input type="text" name="name" placeholder="Name"/>
+		<input type="text" name="email" placeholder="Email"/>
+		<input type="submit" value="Add a user"/>
+	</form>
+	<script type="text/javascript" src="public/javascript/script.js"></script>
+</body>
+</html>
